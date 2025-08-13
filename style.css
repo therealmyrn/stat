@@ -360,7 +360,7 @@
   .container-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2rem;
+    padding: 8rem;
     width: 100%;
   }
   .container-2 h1 {
@@ -440,7 +440,7 @@
   .container-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    padding: 8rem;
+    padding: 10rem;
     width: 100%;
   }
   .container-2 h1 {
