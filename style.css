@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+
+  --Navy-950-main-background: hsl(233, 47%, 7%);
+  --Blue-950-card-background: hsl(244, 37%, 16%);
+  --Purple-500-accent: hsl(277, 64%, 61%);
+
+  /* Neutral */
+
+  --White-main-heading-stats: hsl(0, 0%, 100%);
+  --White-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --White-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+  /* font-family: "Lexend Deca", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+}
+
+/* Very small phones (320px – 479px) */
+@media (min-width: 320px) and (max-width: 479px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: grid;
+    padding: 1.6rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    grid-template-columns: repeat(300px);
+    grid-template-rows: repeat(300px);
+    text-align: center;
+    justify-content: center;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 1.4rem;
+    border-radius: 0px 0px 10px 10px;
+    justify-items: center;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .container-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 97%;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 3rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+
+/* Medium phones (480px – 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: grid;
+    padding: 1.6rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    grid-template-columns: repeat(300px);
+    grid-template-rows: repeat(300px);
+    text-align: center;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 90%;
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 1.4rem;
+    justify-items: center;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 3rem;
+  }
+  .container-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 80%;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+/* my phone screen */
+@media (min-width: 527px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: grid;
+    padding: 1.6rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    grid-template-columns: repeat(300px);
+    grid-template-rows: repeat(300px);
+    text-align: center;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 90%;
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+    padding-bottom: 1.5rem;
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 1.4rem;
+    justify-items: center;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 4rem;
+  }
+  .container-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 78%;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+
+/* Tablets (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: grid;
+    padding: 1.6rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    grid-template-columns: repeat(300px);
+    grid-template-rows: repeat(300px);
+    text-align: center;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 89%;
+    font-size: 3rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 1.4rem;
+    justify-items: center;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .container-1 {
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-mobile.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 1rem;
+    width: 68%;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+
+/* Small laptops (1024px – 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    width: 100%;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 98%;
+    font-size: 2.2rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 2rem;
+    /* justify-items: center; */
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .container-1 {
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    text-align: left;
+    margin-top: -1.5rem;
+    /* align-self: center;
+    justify-content: center; */
+
+    width: 70%;
+    font-size: 14px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+
+/* Desktops (1280px – 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8rem;
+    width: 100%;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 99%;
+    font-size: 2.8rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 2rem;
+    /* justify-items: center; */
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .container-1 {
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    text-align: left;
+    margin-top: -1.5rem;
+    /* align-self: left;
+    justify-content: left; */
+
+    width: 90%;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
+
+/* Extra large screens (1536px and above) */
+@media (min-width: 1536px) {
+  body {
+    background-color: var(--Navy-950-main-background);
+  }
+  .container-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 8rem;
+  }
+  .container-2 h1 {
+    padding-top: 1.6rem;
+    align-self: center;
+    width: 98%;
+    font-size: 2.2rem;
+    font-family: "Inter", sans-serif;
+    color: var(--White-main-heading-stats);
+  }
+  .container-2 b {
+    color: var(--Purple-500-accent);
+    font-weight: 700;
+  }
+  .container-2 {
+    background-color: var(--Blue-950-card-background);
+    height: auto;
+    padding: 2rem;
+    /* justify-items: center; */
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .container-1 {
+    background: linear-gradient(
+        135deg,
+        hsl(277, 64%, 41%, 0.3),
+        hsl(277, 64%, 41%, 0.5)
+      ),
+      url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .discover {
+    color: var(--White-main-paragraph);
+    display: flex;
+    text-align: left;
+    margin-top: -1.5rem;
+    /* align-self: center;
+    justify-content: center; */
+
+    width: 98%;
+    font-size: 14px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .spans {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 1rem;
+  }
+  .spans p {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--White-stat-headings);
+  }
+  .spans h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--White-main-heading-stats);
+  }
+  .div-1 h3 {
+    text-transform: lowercase !important;
+  }
+}
